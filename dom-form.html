@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dom Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="form" action="#" method="post" >
+        <h1 id="title">Personal Information Form</h1>
+        <p id="description">DOM Manipulation task</p>
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Enter your First Name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Enter your Last Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea type="text" id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="pincode">Pincode</label>
+          <input type="text" id="pincode" name="pincode" required />
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" required />
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" required />
+        </div>
+        <button type="button" id="submit" class="btn" onclick="addData()">Submit</button>
+      </form>
+    </div>
+    <div class="table-container">
+        <h2>Table Data</h2>
+        <table id="display" class="table">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>State</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody id="tableData"></tbody>
+          </table>
+    </div>
+    <script src="script.js" defer></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js" defer></script>
+  </body>
+</html>
