@@ -21,7 +21,8 @@ function addData() {
 }
 
 function clearForm() {
-    document.getElementById('lastName').value = "";
+    document.getElementById('first-name').value = "";
+    document.getElementById('last-name').value = "";
     document.getElementById('email').value = "";
     document.getElementById('address').value = "";
     document.getElementById('pincode').value = "";
